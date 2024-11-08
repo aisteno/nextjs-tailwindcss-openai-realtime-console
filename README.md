@@ -13,7 +13,7 @@ yarn install
 2. Create a `.env.local` file:
 
 ```conf
-OPENAI_API_KEY=YOUR_API_KEY
+NEXT_PUBLIC_OPENAI_API_KEY=YOUR_API_KEY
 ```
 
 3. Start the development server:
@@ -30,7 +30,7 @@ Visit `localhost:3000` and you're ready to go! 🎉
 - Styled with **Tailwind CSS** for modern, responsive design
 - Integrated relay server - no separate setup needed! This is accomplished by using a custom Next.js server (see [Next.js Custom Server docs](https://nextjs.org/docs/pages/building-your-application/configuring/custom-server))
 
-> **Important Note:** When starting the server with `node server.js`, the Next.js HMR (Hot Module Replacement) does not work. To work around this, use `yarn dev` during development and set the API key through `NEXT_PUBLIC_OPENAI_API_KEY`. For deployment, ensure that `NEXT_PUBLIC_OPENAI_API_KEY` is not defined, and use the relay server instead. Suggestions for avoiding this workaround are welcome.
+> **Important Note:** When starting the server with `node server.js` aka `yarn start`, the Next.js HMR (Hot Module Replacement) does not work. To work around this, use `yarn dev` during development and set the API key through `NEXT_PUBLIC_OPENAI_API_KEY`. For deployment, ensure that `NEXT_PUBLIC_OPENAI_API_KEY` is not defined and define`OPENAI_API_KEY`, and use the relay server instead. Suggestions for avoiding this workaround are welcome.
 
 ## 🐳 Docker Support
 
