@@ -55,7 +55,7 @@ ACR_LOGIN_SERVER
 ACR_USERNAME
 ACR_PASSWORD
 AZUREAPPSERVICE_PUBLISHPROFILE // only needed if you're deployment requires authentication
-WEBSITE_HOSTNAME // hostname of your app, eg. realtime-console-xyz.azurewebsites.net (this is set by default by Azure App Service)
+WEBSITE_HOSTNAME // hostname of your app, eg. realtime-console-xyz.azurewebsites.net
 ```
 
 The workflow can be triggered manually from the GitHub Actions interface on the `main` branch.
